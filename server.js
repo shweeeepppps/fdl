@@ -14,6 +14,7 @@ const helmet        = require('helmet');
 const { engine }    = require('express-handlebars');
 
 const { i18nMiddleware, SUPPORTED_LANGS } = require('./middleware/i18n');
+const { siteSettingsMiddleware }        = require('./middleware/siteSettings');
 const { verifyConnection }                = require('./services/mailer');
 const routes                              = require('./routes/index');
 
@@ -101,6 +102,7 @@ app.use((req, res, next) => {
 });
 
 app.use(i18nMiddleware);
+app.use(siteSettingsMiddleware);
 
 // ── Routes ────────────────────────────────────────────────
 app.use('/', routes);

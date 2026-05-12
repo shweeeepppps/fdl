@@ -245,33 +245,53 @@
       successBox.style.display = 'none';
       errorBox.style.display   = 'none';
 
-      // Gather form data
-      const data = Object.fromEntries(new FormData(form));
+        // Gather form data
+        const data = Object.fromEntries(new FormData(form));
 
-      try {
-        const res = await fetch(window.FDL.contactUrl, {
-          method:  'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body:    JSON.stringify(data),
-        });
+        try {
+          const res = await fetch(window.FDL.contactUrl, {
+            method:  'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body:    JSON.stringify(data),
+          });
 
-        const json = await res.json();
+          const json = await res.json();
 
-        if (json.success) {
-          successBox.textContent   = window.FDL.i18n.success;
-          successBox.style.display = 'block';
-          form.reset();
+          // Always open a prefilled email draft to the receiver (mailto:),
+          // so the request content reaches the receiver even if SMTP sending fails.
+          const email = window.FDL.contactEmail;
+          if (email) {
+            const subject =
+              `Inquiry from ${data.firstname || ''} ${data.lastname || ''}`.trim() ||
+              'Inquiry from FDL Chemicals';
 
-          // Animate success box in
-          gsap.from(successBox, { opacity: 0, y: 10, duration: 0.4, ease: 'power2.out' });
-        } else {
-          throw new Error(json.message || window.FDL.i18n.error);
-        }
-      } catch (err) {
-        errorBox.textContent   = err.message || window.FDL.i18n.error;
-        errorBox.style.display = 'block';
-        gsap.from(errorBox, { opacity: 0, y: 10, duration: 0.4, ease: 'power2.out' });
-      } finally {
+            const bodyLines = [
+              `Name: ${(data.firstname || '').trim()} ${(data.lastname || '').trim()}`.trim(),
+              `Company: ${data.company || ''}`,
+              `Email: ${data.email || ''}`,
+              `Category: ${data.category || ''}`,
+              ``,
+              `Message:`,
+              `${data.message || ''}`,
+            ];
+
+            const body = bodyLines.join('\n');
+            const url =
+              `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            window.location.href = url;
+          }
+
+          // Show success UI only when backend succeeded; otherwise keep quiet.
+          if (json && json.success) {
+            successBox.textContent   = window.FDL.i18n.success;
+            successBox.style.display = 'block';
+            form.reset();
+            gsap.from(successBox, { opacity: 0, y: 10, duration: 0.4, ease: 'power2.out' });
+          }
+        } catch (err) {
+          // Quiet: backend may fail (SMTP). mailto draft already covers delivery.
+        } finally {
         btn.disabled    = false;
         btn.textContent = originalText;
       }

@@ -1,0 +1,39 @@
+<section style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px;">
+  <div style="width:100%;max-width:520px;border:2px solid #000;background:#e8f0e8;border-radius:0;padding:22px;box-shadow:6px 6px 0 #000;">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#2e4a2e;margin-bottom:14px;">
+      Admin Login
+    </div>
+
+    <h1 style="font-family:'Barlow Condensed',sans-serif;font-size:38px;line-height:1;margin:0 0 18px 0;text-transform:uppercase;">
+      Sign in
+    </h1>
+
+    {{#if error}}
+      <div style="border:2px solid #ff4d4d;background:#ffd6d6;padding:12px;margin-bottom:14px;font-family:'IBM Plex Mono',monospace;font-size:12px;">
+        {{error}}
+      </div>
+    {{/if}}
+
+    <form method="POST" action="/admin/login">
+      <div style="margin-bottom:14px;">
+        <label style="display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#2e4a2e;margin-bottom:8px;">
+          Admin token
+        </label>
+        <input
+          name="token"
+          type="password"
+          required
+          style="width:100%;border:2px solid #000;background:#fff;padding:12px;font-family:inherit;font-size:16px;outline:none;"
+        />
+      </div>
+
+      <button type="submit" style="width:100%;border:2px solid #000;background:#7aff4f;color:#080a08;padding:12px 14px;font-weight:900;font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.04em;box-shadow:4px 4px 0 #000;cursor:pointer;">
+        Login →
+      </button>
+    </form>
+
+    <div style="margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#4a5e4a;line-height:1.6;">
+      Tip: set <code style="background:#fff;border:1px dashed #2e4a2e;padding:2px 6px;">ADMIN_TOKEN</code> in your <code style="background:#fff;border:1px dashed #2e4a2e;padding:2px 6px;">.env</code>.
+    </div>
+  </div>
+</section>

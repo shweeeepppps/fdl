@@ -1,0 +1,11 @@
+{
+  "contact": {
+    "address_value": "New Address, Casablanca",
+    "email_value": "new@fdl-chemicals.ma",
+    "phone_value": "+212 5 555 1212",
+    "hours_value": "Mon–Fri, 09:00–18:00 (GMT+1)"
+  },
+  "footer": {
+    "copy": "sara"
+  }
+}

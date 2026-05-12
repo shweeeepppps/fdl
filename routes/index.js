@@ -8,6 +8,7 @@ const express   = require('express');
 const { body, validationResult } = require('express-validator');
 const rateLimit = require('express-rate-limit');
 const { sendContactEmail } = require('../services/mailer');
+const { SUPPORTED_LANGS } = require('../middleware/i18n');
 
 const router = express.Router();
 
@@ -35,8 +36,15 @@ router.get('/', (req, res) => {
   res.redirect(`/${req.lang}`);
 });
 
+const adminRoutes = require('./admin');
+router.use('/admin', adminRoutes);
+
 // ── GET  /:lang  →  landing page ─────────────────────────
 router.get('/:lang', (req, res) => {
+  if (!SUPPORTED_LANGS.includes(req.params.lang)) {
+    return res.status(404).render('404', { layout: 'main', t: res.locals.t, lang: res.locals.lang });
+  }
+
   res.render('home', {
     layout: 'main',
     t: res.locals.t,

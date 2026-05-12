@@ -1,0 +1,236 @@
+{
+  "lang": "en",
+  "langLabel": "English",
+  "switchLang": "FR",
+  "switchLangUrl": "/fr",
+
+  "nav": {
+    "about": "About",
+    "products": "Products",
+    "whyus": "Why Us",
+    "network": "Network",
+    "certifications": "Certifications",
+    "cta": "Request a Quote"
+  },
+
+  "hero": {
+    "label": "Casablanca, Morocco — MENA Chemical Trade",
+    "line1": "Global",
+    "line2": "Chemical",
+    "line3": "Solutions",
+    "desc": "FDL Chemicals is a premier Casablanca-based import, export, and distribution company serving industrial, agricultural, and specialty chemical markets across Morocco and the MENA region.",
+    "stat1_num": "200",
+    "stat1_suffix": "+",
+    "stat1_label": "Products",
+    "stat2_num": "40",
+    "stat2_suffix": "+",
+    "stat2_label": "Countries",
+    "stat3_num": "15",
+    "stat3_suffix": "+",
+    "stat3_label": "Years",
+    "scroll": "Scroll"
+  },
+
+  "ticker": ["Industrial", "Agricultural", "Specialty", "Export", "Import", "MENA", "Logistics"],
+
+  "marquee": [
+    "Industrial Acids",
+    "Agricultural Inputs",
+    "Specialty Solvents",
+    "Caustic Soda & Bases",
+    "Polymer Additives",
+    "Surface Treatment",
+    "Water Treatment",
+    "Food-Grade Chemicals"
+  ],
+
+  "about": {
+    "label": "About FDL Chemicals",
+    "line1": "Bridging",
+    "line2": "Global",
+    "line3": "Supply Chains",
+    "p1": "Founded in Casablanca's industrial heart, FDL Chemicals has spent over 15 years forging direct relationships with chemical manufacturers across Europe, Asia, and the Americas — delivering certified, compliant materials to manufacturers and processors throughout Morocco and the broader MENA region.",
+    "p2": "Our technical team bridges the gap between global supply networks and local industrial demand, handling customs, logistics, regulatory documentation, and last-mile delivery with operational precision.",
+    "cta": "Partner with us →",
+    "location": "Zone Industrielle — Casablanca, Morocco",
+    "cardTitle": "Full-Service Chemical Trade",
+    "cardDesc": "From origin sourcing and regulatory compliance to bonded warehousing and ADR-certified transport — FDL manages the full chemical supply chain with documented quality at every step.",
+    "tags": ["Import Licensed", "Export Certified", "REACH Compliant", "ADR Transport"],
+    "floatLabel": "Years of Expertise"
+  },
+
+  "products": {
+    "label": "Product Portfolio",
+    "line1": "Our",
+    "line2": "Chemical",
+    "line3": "Categories",
+    "items": [
+      {
+        "num": "01",
+        "name": "Industrial Acids",
+        "desc": "High-purity mineral and organic acids for manufacturing processes.",
+        "tags": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"]
+      },
+      {
+        "num": "02",
+        "name": "Agricultural Chemicals",
+        "desc": "Fertilizers, pesticides, and crop nutrition inputs for Moroccan agri-industry.",
+        "tags": ["NH₄NO₃", "KCl", "MAP"]
+      },
+      {
+        "num": "03",
+        "name": "Specialty Solvents",
+        "desc": "Industrial and laboratory-grade solvents for precision applications.",
+        "tags": ["CH₃OH", "C₂H₅OH", "Acetone"]
+      },
+      {
+        "num": "04",
+        "name": "Caustic & Bases",
+        "desc": "Alkali solutions for chemical synthesis, paper, and textile industries.",
+        "tags": ["NaOH", "KOH", "Na₂CO₃"]
+      },
+      {
+        "num": "05",
+        "name": "Water Treatment",
+        "desc": "Coagulants, flocculants, and biocides for municipal and industrial water systems.",
+        "tags": ["Al₂(SO₄)₃", "Cl₂", "PAC"]
+      },
+      {
+        "num": "06",
+        "name": "Polymer Additives",
+        "desc": "Stabilizers, plasticizers, and flame retardants for plastics manufacturing.",
+        "tags": ["TiO₂", "DINP", "HDPE"]
+      },
+      {
+        "num": "07",
+        "name": "Surface Treatment",
+        "desc": "Pickling agents, passivators, and metal surface prep chemicals.",
+        "tags": ["H₂SO₄", "HF", "ZnCl₂"]
+      },
+      {
+        "num": "08",
+        "name": "Food-Grade Chemicals",
+        "desc": "Food-safe additives, preservatives, and processing aids — Halal and GMP certified.",
+        "tags": ["Citric Acid", "NaCl", "E330"]
+      }
+    ]
+  },
+
+  "whyus": {
+    "label": "Performance Metrics",
+    "line1": "The",
+    "line2": "FDL Advantage",
+    "stats": [
+      { "target": 200, "suffix": "+", "desc": "Products in Portfolio" },
+      { "target": 40,  "suffix": "+", "desc": "Countries Served" },
+      { "target": 15,  "suffix": "+", "desc": "Years of Operation" },
+      { "target": 98,  "suffix": "%", "desc": "On-Time Delivery Rate" }
+    ],
+    "features": [
+      {
+        "title": "Technical Expertise",
+        "body": "Our team of chemical engineers and industry specialists provide product selection guidance, SDS documentation, and formulation support tailored to your process requirements."
+      },
+      {
+        "title": "Regulatory Compliance",
+        "body": "Full REACH registration, MSDS management, ADR transport compliance, and Moroccan customs clearance handled in-house — ensuring zero regulatory delays on every shipment."
+      },
+      {
+        "title": "End-to-End Logistics",
+        "body": "From bonded warehouse in Casablanca Port to factory-gate delivery — we manage multimodal freight, hazmat certifications, temperature-controlled storage, and last-mile distribution."
+      }
+    ]
+  },
+
+  "map": {
+    "label": "Global Network",
+    "line1": "Import &",
+    "line2": "Export",
+    "line3": "Network",
+    "body": "FDL Chemicals sources directly from licensed manufacturers in Germany, Belgium, Spain, China, India, and the United States — and distributes across Morocco, West Africa, and the wider MENA region through certified logistics partners.",
+    "legend": {
+      "hub": "Hub Location",
+      "import": "Import Routes",
+      "dist": "Distribution"
+    },
+    "routes": [
+      { "country": "Germany",    "type": "Industrial Acids & Solvents" },
+      { "country": "China",      "type": "Polymer Additives & Bases" },
+      { "country": "India",      "type": "Agrochemicals & Dyes" },
+      { "country": "Belgium",    "type": "Specialty Solvents" },
+      { "country": "Spain",      "type": "Food-Grade Chemicals" },
+      { "country": "USA",        "type": "Water Treatment Agents" },
+      { "country": "Morocco",    "type": "Primary Distribution Hub" },
+      { "country": "West Africa","type": "Regional Export Markets" }
+    ]
+  },
+
+  "certs": {
+    "label": "Quality Assurance",
+    "line1": "Certified.",
+    "line2": "Compliant.",
+    "line3": "Trusted.",
+    "items": [
+      { "name": "REACH",   "desc": "EU chemical registration, evaluation and authorization compliance" },
+      { "name": "ISO 9001","desc": "Quality management systems — international standard certification" },
+      { "name": "ADR",     "desc": "Dangerous goods road transport compliance across EU and MENA" },
+      { "name": "Halal",   "desc": "Halal-certified food-grade and processing chemical products" },
+      { "name": "MSDS",    "desc": "Full material safety data sheets for all products in portfolio" },
+      { "name": "COA",     "desc": "Certificates of analysis issued for every batch and delivery" },
+      { "name": "GMP",     "desc": "Good manufacturing practice standards for food and pharma grade" },
+      { "name": "Customs", "desc": "Licensed customs broker — Morocco and international clearance" }
+    ]
+  },
+
+  "contact": {
+    "label": "Get in Touch",
+    "line1": "Start A",
+    "line2": "Conversation",
+    "address_label": "Address",
+    "address_value": "Zone Industrielle, Casablanca, Morocco",
+    "email_label": "Email",
+    "email_value": "contact@fdl-chemicals.ma",
+    "phone_label": "Phone",
+    "phone_value": "+212 5 22 XXX XXX",
+    "hours_label": "Business Hours",
+    "hours_value": "Mon–Fri, 08:00–18:00 (GMT+1)",
+    "form": {
+      "firstname": "First Name",
+      "firstname_ph": "Ahmed",
+      "lastname": "Last Name",
+      "lastname_ph": "El Mansouri",
+      "company": "Company",
+      "company_ph": "Company or Organization",
+      "email": "Email Address",
+      "email_ph": "you@company.com",
+      "category": "Product Category",
+      "category_ph": "Select a category",
+      "message": "Message & Specifications",
+      "message_ph": "Describe your requirements, quantities, delivery location, and any regulatory constraints...",
+      "submit": "Send Inquiry →",
+      "success": "Message sent — We will respond within 24 hours.",
+      "error": "Something went wrong. Please try again.",
+      "categories": [
+        "Industrial Acids",
+        "Agricultural Chemicals",
+        "Specialty Solvents",
+        "Caustic & Bases",
+        "Water Treatment",
+        "Polymer Additives",
+        "Surface Treatment",
+        "Food-Grade Chemicals",
+        "Other"
+      ]
+    }
+  },
+
+  "footer": {
+    "copy": "© 2026 FDL Chemicals. All rights reserved.",
+    "links": [
+      { "label": "About",          "href": "#about" },
+      { "label": "Products",       "href": "#products-section" },
+      { "label": "Certifications", "href": "#certs" },
+      { "label": "Contact",        "href": "#contact" }
+    ]
+  }
+}

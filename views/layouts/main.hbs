@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FDL Chemicals — {{t.hero.line1}} {{t.hero.line2}} {{t.hero.line3}}</title>
+  <meta name="description" content="{{t.hero.desc}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,700;1,900&family=Barlow:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+{{{body}}}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+  // Pass server-side data to client JS
+  window.FDL = {
+    lang: '{{lang}}',
+    contactUrl: '/{{lang}}/contact',
+    i18n: {
+      success: '{{t.contact.form.success}}',
+      error:   '{{t.contact.form.error}}'
+    }
+  };
+</script>
+<script src="/js/main.js"></script>
+</body>
+</html>

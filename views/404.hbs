@@ -1,0 +1,13 @@
+<!-- 404 -->
+<section style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#7aff4f;margin-bottom:24px;">— Error 404</div>
+  <h1 style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(80px,12vw,160px);font-weight:900;text-transform:uppercase;line-height:.9;color:#e8f0e8;margin-bottom:32px;">
+    Not<br><em style="color:#7aff4f;font-weight:300;font-style:italic;">Found</em>
+  </h1>
+  <p style="font-size:15px;color:#8a9e8a;max-width:360px;line-height:1.7;margin-bottom:40px;">
+    {{#eq lang "fr"}}Cette page n'existe pas.{{else}}This page does not exist.{{/eq}}
+  </p>
+  <a href="/{{lang}}" style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7aff4f;border:1px solid #7aff4f;padding:12px 28px;transition:background .2s;">
+    {{#eq lang "fr"}}← Retour à l'accueil{{else}}← Back to home{{/eq}}
+  </a>
+</section>

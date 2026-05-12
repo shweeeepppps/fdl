@@ -1,0 +1,397 @@
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">FDL<span>.</span>Chemicals</div>
+  <ul class="nav-links">
+    <li><a href="#about">{{t.nav.about}}</a></li>
+    <li><a href="#products-section">{{t.nav.products}}</a></li>
+    <li><a href="#whyus">{{t.nav.whyus}}</a></li>
+    <li><a href="#map-section">{{t.nav.network}}</a></li>
+    <li><a href="#certs">{{t.nav.certifications}}</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      {{#eq lang "fr"}}
+        <a href="/fr" class="lang-btn active hover-el">FR</a>
+        <a href="/en" class="lang-btn hover-el">EN</a>
+      {{/eq}}
+      {{#eq lang "en"}}
+        <a href="/fr" class="lang-btn hover-el">FR</a>
+        <a href="/en" class="lang-btn active hover-el">EN</a>
+      {{/eq}}
+    </div>
+    <button class="nav-cta hover-el" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      {{t.nav.cta}}
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1440" height="900" fill="#080a08"/>
+      <g stroke="#1f2e1f" stroke-width="1" opacity="0.6">
+        <line x1="80" y1="80" x2="200" y2="140"/><line x1="200" y1="140" x2="320" y2="80"/>
+        <line x1="320" y1="80" x2="440" y2="140"/><line x1="440" y1="140" x2="560" y2="80"/>
+        <line x1="560" y1="80" x2="680" y2="140"/><line x1="680" y1="140" x2="800" y2="80"/>
+        <line x1="800" y1="80" x2="920" y2="140"/><line x1="920" y1="140" x2="1040" y2="80"/>
+        <line x1="1040" y1="80" x2="1160" y2="140"/><line x1="1160" y1="140" x2="1280" y2="80"/>
+        <line x1="80" y1="220" x2="200" y2="280"/><line x1="200" y1="280" x2="320" y2="220"/>
+        <line x1="320" y1="220" x2="440" y2="280"/><line x1="440" y1="280" x2="560" y2="220"/>
+        <line x1="560" y1="220" x2="680" y2="280"/><line x1="680" y1="280" x2="800" y2="220"/>
+        <line x1="800" y1="220" x2="920" y2="280"/><line x1="920" y1="280" x2="1040" y2="220"/>
+        <line x1="80" y1="80" x2="80" y2="220"/><line x1="200" y1="140" x2="200" y2="280"/>
+        <line x1="320" y1="80" x2="320" y2="220"/><line x1="440" y1="140" x2="440" y2="280"/>
+        <line x1="560" y1="80" x2="560" y2="220"/><line x1="680" y1="140" x2="680" y2="280"/>
+        <line x1="800" y1="80" x2="800" y2="220"/><line x1="920" y1="140" x2="920" y2="280"/>
+        <line x1="1040" y1="80" x2="1040" y2="220"/><line x1="1160" y1="140" x2="1160" y2="280"/>
+      </g>
+      <g fill="#2e4a2e">
+        <circle cx="80" cy="80" r="3"/><circle cx="200" cy="140" r="3"/><circle cx="320" cy="80" r="3"/>
+        <circle cx="440" cy="140" r="3"/><circle cx="560" cy="80" r="3"/><circle cx="680" cy="140" r="3"/>
+        <circle cx="800" cy="80" r="3"/><circle cx="920" cy="140" r="3"/><circle cx="1040" cy="80" r="3"/>
+        <circle cx="1160" cy="140" r="3"/><circle cx="1280" cy="80" r="3"/><circle cx="80" cy="220" r="3"/>
+        <circle cx="200" cy="280" r="3"/><circle cx="320" cy="220" r="3"/><circle cx="440" cy="280" r="3"/>
+        <circle cx="560" cy="220" r="3"/><circle cx="680" cy="280" r="3"/><circle cx="800" cy="220" r="3"/>
+        <circle cx="920" cy="280" r="3"/><circle cx="1040" cy="220" r="3"/><circle cx="1160" cy="280" r="3"/>
+      </g>
+      <g font-family="'IBM Plex Mono', monospace" font-size="11" fill="#2e4a2e" opacity="0.85">
+        <text x="90" y="76">H&#8322;SO&#8324;</text>
+        <text x="570" y="76">NaOH</text>
+        <text x="1050" y="76">CH&#8323;OH</text>
+        <text x="210" y="136">HCl</text>
+        <text x="450" y="136">NH&#8323;</text>
+        <text x="810" y="136">KOH</text>
+        <text x="330" y="216">HNO&#8323;</text>
+        <text x="690" y="216">Na&#8322;CO&#8323;</text>
+      </g>
+    </svg>
+  </div>
+  <div class="hero-glow"></div>
+  <div class="hero-fade"></div>
+
+  <div class="hero-ticker">
+    <div class="ticker-track">
+      {{#each t.ticker}}<span class="ticker-item">{{this}}</span><span class="ticker-item ac">·</span>{{/each}}
+      {{#each t.ticker}}<span class="ticker-item">{{this}}</span><span class="ticker-item ac">·</span>{{/each}}
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-label" id="hero-label">— {{t.hero.label}}</div>
+    <h1 class="hero-headline" id="hero-headline">
+      {{t.hero.line1}}<br>
+      <em>{{t.hero.line2}}</em><br>
+      {{t.hero.line3}}
+    </h1>
+    <div class="hero-subrow" id="hero-subrow">
+      <p class="hero-desc">{{t.hero.desc}}</p>
+      <div class="hero-stats">
+        <div class="hero-stat" id="stat-1">
+          <div class="hero-stat-num">
+            <span class="count-up" data-target="{{t.hero.stat1_num}}">0</span><span>{{t.hero.stat1_suffix}}</span>
+          </div>
+          <div class="hero-stat-label">{{t.hero.stat1_label}}</div>
+        </div>
+        <div class="hero-stat" id="stat-2">
+          <div class="hero-stat-num">
+            <span class="count-up" data-target="{{t.hero.stat2_num}}">0</span><span>{{t.hero.stat2_suffix}}</span>
+          </div>
+          <div class="hero-stat-label">{{t.hero.stat2_label}}</div>
+        </div>
+        <div class="hero-stat" id="stat-3">
+          <div class="hero-stat-num">
+            <span class="count-up" data-target="{{t.hero.stat3_num}}">0</span><span>{{t.hero.stat3_suffix}}</span>
+          </div>
+          <div class="hero-stat-label">{{t.hero.stat3_label}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <div class="scroll-text">{{t.hero.scroll}}</div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div id="marquee">
+  <div class="marquee-track">
+    {{#each t.marquee}}<span class="marquee-item">{{this}}</span><span class="marquee-item marquee-dot">&bull;</span>{{/each}}
+    {{#each t.marquee}}<span class="marquee-item">{{this}}</span><span class="marquee-item marquee-dot">&bull;</span>{{/each}}
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="rev">
+    <div class="section-label">{{t.about.label}}</div>
+    <h2 class="section-headline" style="margin-bottom:32px;">
+      {{t.about.line1}}<br><em>{{t.about.line2}}</em><br>{{t.about.line3}}
+    </h2>
+    <p class="about-body">{{t.about.p1}}</p>
+    <p class="about-body">{{t.about.p2}}</p>
+    <a href="#contact" class="about-link hover-el">{{t.about.cta}}</a>
+  </div>
+  <div class="rev-r" style="position:relative;">
+    <div class="about-card">
+      <div class="about-card-stripe"></div>
+      <div class="about-card-body">
+        <div class="about-card-location">{{t.about.location}}</div>
+        <div class="about-card-title">{{t.about.cardTitle}}</div>
+        <p class="about-card-desc">{{t.about.cardDesc}}</p>
+        <div class="cert-grid">
+          {{#each t.about.tags}}
+            <div class="cert-tag hover-el">{{this}}</div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+    <div class="about-float">
+      <div class="about-float-num">15+</div>
+      <div class="about-float-label">{{t.about.floatLabel}}</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<div id="products-section">
+  <div class="products-header rev">
+    <div class="section-label">{{t.products.label}}</div>
+    <h2 class="section-headline">
+      {{t.products.line1}}<br><em>{{t.products.line2}}</em><br>{{t.products.line3}}
+    </h2>
+  </div>
+  <div class="products-grid">
+    {{#each t.products.items}}
+    <div class="product-card rev hover-el">
+      <span class="product-num">{{this.num}}</span>
+      {{{productIcon this.num}}}
+      <div class="product-name">{{this.name}}</div>
+      <div class="product-desc">{{this.desc}}</div>
+      <div class="formula-tags">
+        {{#each this.tags}}<span class="formula-tag">{{this}}</span>{{/each}}
+      </div>
+      <div class="product-accent-line"></div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+<!-- WHY US -->
+<section id="whyus">
+  <div class="section-label whyus-label rev">{{t.whyus.label}}</div>
+  <h2 class="section-headline whyus-headline rev">
+    {{t.whyus.line1}}<br><em>{{t.whyus.line2}}</em>
+  </h2>
+  <div class="stat-grid">
+    {{#each t.whyus.stats}}
+    <div class="stat-cell rev">
+      <div class="stat-num">
+        <span class="count-up-scroll" data-target="{{this.target}}">0</span>
+        <span class="stat-suffix">{{this.suffix}}</span>
+      </div>
+      <div class="stat-desc">{{this.desc}}</div>
+    </div>
+    {{/each}}
+  </div>
+  <div class="feature-grid">
+    {{#each t.whyus.features}}
+    <div class="feature-card rev hover-el">
+      <div class="feature-icon-box">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7aff4f" stroke-width="1.5" stroke-linecap="round">
+          <circle cx="12" cy="12" r="9"/><path d="M9 12 L11 14 L15 10"/>
+        </svg>
+      </div>
+      <div class="feature-title">{{this.title}}</div>
+      <p class="feature-body">{{this.body}}</p>
+    </div>
+    {{/each}}
+  </div>
+</section>
+
+<!-- MAP -->
+<section id="map-section">
+  <div class="map-header">
+    <div class="rev">
+      <div class="section-label">{{t.map.label}}</div>
+      <h2 class="section-headline">{{t.map.line1}}<br>{{t.map.line2}}<br>{{t.map.line3}}</h2>
+    </div>
+    <div class="rev-r">
+      <p class="map-body">{{t.map.body}}</p>
+    </div>
+  </div>
+  <div class="map-wrap rev">
+    <svg id="world-map" viewBox="0 0 1200 460" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 60 80 L 200 60 L 280 80 L 300 120 L 280 180 L 240 220 L 200 240 L 160 260 L 140 300 L 120 320 L 80 300 L 60 260 L 40 200 L 50 140 Z" fill="#141814" stroke="#2e3d2e" stroke-width="0.8"/>
+      <path d="M 160 300 L 220 290 L 250 310 L 260 360 L 240 420 L 200 440 L 170 430 L 150 400 L 140 360 L 150 330 Z" fill="#141814" stroke="#2e3d2e" stroke-width="0.8"/>
+      <path d="M 500 60 L 560 55 L 600 65 L 620 80 L 610 110 L 580 120 L 550 115 L 520 120 L 500 110 L 490 90 Z" fill="#141814" stroke="#2e3d2e" stroke-width="0.8"/>
+      <path d="M 520 130 L 580 125 L 620 140 L 640 180 L 650 240 L 640 310 L 610 370 L 570 400 L 530 400 L 500 370 L 480 310 L 470 240 L 480 180 L 500 145 Z" fill="#141814" stroke="#2e3d2e" stroke-width="0.8"/>
+      <path d="M 630 55 L 850 50 L 980 70 L 1020 100 L 1000 140 L 950 160 L 880 170 L 820 165 L 760 150 L 700 140 L 650 130 L 625 105 Z" fill="#141814" stroke="#2e3d2e" stroke-width="0.8"/>
+      <path d="M 960 280 L 1060 265 L 1100 285 L 1110 340 L 1080 370 L 1020 375 L 970 360 L 950 330 L 955 300 Z" fill="#141814" stroke="#2e3d2e" stroke-width="0.8"/>
+      <line id="route-de" x1="555" y1="75" x2="530" y2="175" stroke="#2e3d2e" stroke-width="1" stroke-dasharray="6,4" opacity="0"/>
+      <line id="route-be" x1="530" y1="72" x2="530" y2="175" stroke="#2e3d2e" stroke-width="1" stroke-dasharray="6,4" opacity="0"/>
+      <line id="route-es" x1="505" y1="85" x2="530" y2="175" stroke="#2e3d2e" stroke-width="1" stroke-dasharray="6,4" opacity="0"/>
+      <line id="route-us" x1="175" y1="180" x2="530" y2="175" stroke="#2e3d2e" stroke-width="1" stroke-dasharray="6,4" opacity="0"/>
+      <line id="route-cn" x1="870" y1="120" x2="530" y2="175" stroke="#2e3d2e" stroke-width="1" stroke-dasharray="6,4" opacity="0"/>
+      <line id="route-in" x1="750" y1="150" x2="530" y2="175" stroke="#2e3d2e" stroke-width="1" stroke-dasharray="6,4" opacity="0"/>
+      <line id="dist-1" x1="530" y1="175" x2="540" y2="310" stroke="#7aff4f" stroke-width="1" stroke-dasharray="4,4" opacity="0.3"/>
+      <line id="dist-2" x1="530" y1="175" x2="430" y2="280" stroke="#7aff4f" stroke-width="1" stroke-dasharray="4,4" opacity="0.3"/>
+      <line id="dist-3" x1="530" y1="175" x2="600" y2="250" stroke="#7aff4f" stroke-width="1" stroke-dasharray="4,4" opacity="0.3"/>
+      <circle cx="555" cy="75" r="5" fill="#2a3a2a" stroke="#2e3d2e" stroke-width="1"/>
+      <text x="563" y="74" font-family="IBM Plex Mono, monospace" font-size="9" fill="#8a9e8a">DE</text>
+      <circle cx="525" cy="69" r="5" fill="#2a3a2a" stroke="#2e3d2e" stroke-width="1"/>
+      <text x="533" y="68" font-family="IBM Plex Mono, monospace" font-size="9" fill="#8a9e8a">BE</text>
+      <circle cx="500" cy="82" r="5" fill="#2a3a2a" stroke="#2e3d2e" stroke-width="1"/>
+      <text x="508" y="81" font-family="IBM Plex Mono, monospace" font-size="9" fill="#8a9e8a">ES</text>
+      <circle cx="870" cy="118" r="5" fill="#2a3a2a" stroke="#2e3d2e" stroke-width="1"/>
+      <text x="878" y="117" font-family="IBM Plex Mono, monospace" font-size="9" fill="#8a9e8a">CN</text>
+      <circle cx="748" cy="148" r="5" fill="#2a3a2a" stroke="#2e3d2e" stroke-width="1"/>
+      <text x="756" y="147" font-family="IBM Plex Mono, monospace" font-size="9" fill="#8a9e8a">IN</text>
+      <circle cx="175" cy="180" r="5" fill="#2a3a2a" stroke="#2e3d2e" stroke-width="1"/>
+      <text x="183" y="179" font-family="IBM Plex Mono, monospace" font-size="9" fill="#8a9e8a">US</text>
+      <circle class="hub-pulse" cx="530" cy="175" r="6" fill="none" stroke="#7aff4f" stroke-width="1.5" opacity="0"/>
+      <circle cx="530" cy="175" r="7" fill="rgba(122,255,79,0.15)" stroke="#7aff4f" stroke-width="1.5"/>
+      <circle cx="530" cy="175" r="3.5" fill="#7aff4f"/>
+      <text x="540" y="170" font-family="IBM Plex Mono, monospace" font-size="9" fill="#7aff4f" font-weight="500">Casablanca Hub</text>
+    </svg>
+    <div class="map-legend">
+      <div class="legend-item"><span class="legend-dot"></span> {{t.map.legend.hub}}</div>
+      <div class="legend-item"><span class="legend-line-dash"></span> {{t.map.legend.import}}</div>
+      <div class="legend-item"><span class="legend-line-solid"></span> {{t.map.legend.dist}}</div>
+    </div>
+  </div>
+  <div class="route-grid" style="margin-top:24px;">
+    {{#each t.map.routes}}
+    <div class="route-cell rev hover-el">
+      <div class="route-country">{{this.country}}</div>
+      <div class="route-type">{{this.type}}</div>
+    </div>
+    {{/each}}
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certs">
+  <div class="certs-header rev">
+    <div class="section-label">{{t.certs.label}}</div>
+    <h2 class="section-headline">{{t.certs.line1}}<br>{{t.certs.line2}}<br>{{t.certs.line3}}</h2>
+  </div>
+  <div class="certs-grid">
+    {{#each t.certs.items}}
+    <div class="cert-card rev hover-el">
+      <div class="cert-badge">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#7aff4f" stroke-width="1.5" stroke-linecap="round">
+          <circle cx="14" cy="14" r="11"/><path d="M9 14 L12 17 L19 10"/>
+        </svg>
+      </div>
+      <div class="cert-name">{{this.name}}</div>
+      <div class="cert-desc">{{this.desc}}</div>
+    </div>
+    {{/each}}
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="rev">
+    <div class="section-label">{{t.contact.label}}</div>
+    <h2 class="contact-headline">{{t.contact.line1}}<br><em>{{t.contact.line2}}</em></h2>
+    <div class="info-row hover-el">
+      <div class="info-icon">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#7aff4f" stroke-width="1.3" stroke-linecap="round">
+          <path d="M9 1 C5.7 1 3 3.7 3 7 C3 11 9 17 9 17 S15 11 15 7 C15 3.7 12.3 1 9 1Z"/>
+          <circle cx="9" cy="7" r="2.5"/>
+        </svg>
+      </div>
+      <div class="info-text">
+        <strong>{{t.contact.address_label}}</strong>{{t.contact.address_value}}
+      </div>
+    </div>
+    <div class="info-row hover-el">
+      <div class="info-icon">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#7aff4f" stroke-width="1.3" stroke-linecap="round">
+          <rect x="2" y="4" width="14" height="10" rx="1.5"/>
+          <path d="M2 5 L9 10 L16 5"/>
+        </svg>
+      </div>
+      <div class="info-text">
+        <strong>{{t.contact.email_label}}</strong>{{t.contact.email_value}}
+      </div>
+    </div>
+    <div class="info-row hover-el">
+      <div class="info-icon">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#7aff4f" stroke-width="1.3" stroke-linecap="round">
+          <path d="M3 3 Q2 5 4 8 Q6 11 10 13 Q13 15 15 14 L15 12 Q13 11 12 12 Q11 13 10 12 Q7 10 6 7 Q5 6 6 5 L4 3 Q3.5 2.5 3 3Z"/>
+        </svg>
+      </div>
+      <div class="info-text">
+        <strong>{{t.contact.phone_label}}</strong>{{t.contact.phone_value}}
+      </div>
+    </div>
+    <div class="info-row hover-el">
+      <div class="info-icon">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#7aff4f" stroke-width="1.3" stroke-linecap="round">
+          <circle cx="9" cy="9" r="7"/>
+          <path d="M9 5 L9 9 L13 11"/>
+        </svg>
+      </div>
+      <div class="info-text">
+        <strong>{{t.contact.hours_label}}</strong>{{t.contact.hours_value}}
+      </div>
+    </div>
+  </div>
+
+  <div class="rev-r">
+    <div class="form-wrap">
+      <form id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">{{t.contact.form.firstname}}</label>
+            <input type="text" name="firstname" class="form-input hover-el" placeholder="{{t.contact.form.firstname_ph}}" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">{{t.contact.form.lastname}}</label>
+            <input type="text" name="lastname" class="form-input hover-el" placeholder="{{t.contact.form.lastname_ph}}" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">{{t.contact.form.company}}</label>
+          <input type="text" name="company" class="form-input hover-el" placeholder="{{t.contact.form.company_ph}}" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">{{t.contact.form.email}}</label>
+          <input type="email" name="email" class="form-input hover-el" placeholder="{{t.contact.form.email_ph}}" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">{{t.contact.form.category}}</label>
+          <select name="category" class="form-select hover-el" required>
+            <option value="" disabled selected>{{t.contact.form.category_ph}}</option>
+            {{#each t.contact.form.categories}}
+              <option>{{this}}</option>
+            {{/each}}
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">{{t.contact.form.message}}</label>
+          <textarea name="message" class="form-textarea hover-el" placeholder="{{t.contact.form.message_ph}}" required></textarea>
+        </div>
+        <button type="submit" class="form-submit hover-el">{{t.contact.form.submit}}</button>
+        <div class="form-success" id="form-success"></div>
+        <div class="form-error" id="form-error"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-copy">{{t.footer.copy}}</div>
+  <div class="footer-logo">FDL<span>.</span>Chemicals</div>
+  <ul class="footer-nav">
+    {{#each t.footer.links}}
+      <li><a href="{{this.href}}" class="hover-el">{{this.label}}</a></li>
+    {{/each}}
+  </ul>
+</footer>

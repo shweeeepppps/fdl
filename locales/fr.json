@@ -1,0 +1,236 @@
+{
+  "lang": "fr",
+  "langLabel": "Français",
+  "switchLang": "EN",
+  "switchLangUrl": "/en",
+
+  "nav": {
+    "about": "À propos",
+    "products": "Produits",
+    "whyus": "Nos Atouts",
+    "network": "Réseau",
+    "certifications": "Certifications",
+    "cta": "Demande de Devis"
+  },
+
+  "hero": {
+    "label": "Casablanca, Maroc — Commerce Chimique MENA",
+    "line1": "Expertise",
+    "line2": "Chimique",
+    "line3": "Mondiale",
+    "desc": "FDL Chemicals est une société d'import-export et de distribution basée à Casablanca, spécialisée dans les marchés chimiques industriels, agricoles et de spécialité à travers le Maroc et la région MENA.",
+    "stat1_num": "200",
+    "stat1_suffix": "+",
+    "stat1_label": "Produits",
+    "stat2_num": "40",
+    "stat2_suffix": "+",
+    "stat2_label": "Pays Sources",
+    "stat3_num": "15",
+    "stat3_suffix": "+",
+    "stat3_label": "Années d'Activité",
+    "scroll": "Défiler"
+  },
+
+  "ticker": ["Industriel", "Agricole", "Spécialité", "Export", "Import", "MENA", "Logistique"],
+
+  "marquee": [
+    "Acides Industriels",
+    "Intrants Agricoles",
+    "Solvants Spéciaux",
+    "Soude Caustique & Bases",
+    "Additifs Polymères",
+    "Traitement de Surface",
+    "Traitement des Eaux",
+    "Chimie Alimentaire"
+  ],
+
+  "about": {
+    "label": "À Propos de FDL Chemicals",
+    "line1": "Connecter les",
+    "line2": "Chaînes",
+    "line3": "Mondiales",
+    "p1": "Fondée au cœur industriel de Casablanca, FDL Chemicals a passé plus de 15 ans à tisser des relations directes avec des fabricants de produits chimiques en Europe, en Asie et en Amérique — en livrant des matériaux certifiés et conformes aux industriels à travers le Maroc et la région MENA.",
+    "p2": "Notre équipe technique fait le lien entre les réseaux d'approvisionnement mondiaux et la demande industrielle locale, gérant les douanes, la logistique, la documentation réglementaire et la livraison finale avec une précision opérationnelle.",
+    "cta": "Travailler avec nous →",
+    "location": "Zone Industrielle — Casablanca, Maroc",
+    "cardTitle": "Commerce Chimique Intégral",
+    "cardDesc": "Du sourcing à la conformité réglementaire, en passant par l'entreposage et le transport certifié ADR — FDL gère l'intégralité de la chaîne d'approvisionnement chimique avec une qualité documentée à chaque étape.",
+    "tags": ["Licencié Import", "Certifié Export", "Conforme REACH", "Transport ADR"],
+    "floatLabel": "Ans d'Expertise"
+  },
+
+  "products": {
+    "label": "Portefeuille Produits",
+    "line1": "Nos",
+    "line2": "Catégories",
+    "line3": "Chimiques",
+    "items": [
+      {
+        "num": "01",
+        "name": "Acides Industriels",
+        "desc": "Acides minéraux et organiques de haute pureté pour les procédés de fabrication.",
+        "tags": ["H₂SO₄", "HCl", "HNO₃", "H₃PO₄"]
+      },
+      {
+        "num": "02",
+        "name": "Chimie Agricole",
+        "desc": "Engrais, pesticides et intrants nutritifs pour l'agro-industrie marocaine.",
+        "tags": ["NH₄NO₃", "KCl", "MAP"]
+      },
+      {
+        "num": "03",
+        "name": "Solvants Spéciaux",
+        "desc": "Solvants industriels et de laboratoire pour des applications de précision.",
+        "tags": ["CH₃OH", "C₂H₅OH", "Acetone"]
+      },
+      {
+        "num": "04",
+        "name": "Caustiques & Bases",
+        "desc": "Solutions alcalines pour la synthèse chimique, le papier et l'industrie textile.",
+        "tags": ["NaOH", "KOH", "Na₂CO₃"]
+      },
+      {
+        "num": "05",
+        "name": "Traitement des Eaux",
+        "desc": "Coagulants, floculants et biocides pour les systèmes d'eau municipaux et industriels.",
+        "tags": ["Al₂(SO₄)₃", "Cl₂", "PAC"]
+      },
+      {
+        "num": "06",
+        "name": "Additifs Polymères",
+        "desc": "Stabilisants, plastifiants et ignifugeants pour la fabrication de plastiques.",
+        "tags": ["TiO₂", "DINP", "HDPE"]
+      },
+      {
+        "num": "07",
+        "name": "Traitement de Surface",
+        "desc": "Agents de décapage, passivateurs et produits de préparation de surfaces métalliques.",
+        "tags": ["H₂SO₄", "HF", "ZnCl₂"]
+      },
+      {
+        "num": "08",
+        "name": "Chimie Alimentaire",
+        "desc": "Additifs alimentaires, conservateurs et auxiliaires de traitement conformes Halal et BPF.",
+        "tags": ["Acide Citrique", "NaCl", "E330"]
+      }
+    ]
+  },
+
+  "whyus": {
+    "label": "Indicateurs de Performance",
+    "line1": "L'Avantage",
+    "line2": "FDL",
+    "stats": [
+      { "target": 200, "suffix": "+", "desc": "Produits en Portefeuille" },
+      { "target": 40,  "suffix": "+", "desc": "Pays Approvisionnés" },
+      { "target": 15,  "suffix": "+", "desc": "Années d'Activité" },
+      { "target": 98,  "suffix": "%", "desc": "Livraisons dans les Délais" }
+    ],
+    "features": [
+      {
+        "title": "Expertise Technique",
+        "body": "Notre équipe d'ingénieurs chimistes et de spécialistes vous accompagne dans la sélection des produits, la documentation SDS et le soutien à la formulation adaptés à vos exigences de process."
+      },
+      {
+        "title": "Conformité Réglementaire",
+        "body": "Enregistrement REACH complet, gestion MSDS, conformité ADR et dédouanement marocain assurés en interne — garantissant zéro retard réglementaire pour chaque expédition."
+      },
+      {
+        "title": "Logistique Complète",
+        "body": "Du port de Casablanca à la livraison en usine — nous gérons le fret multimodal, les certifications matières dangereuses, le stockage et la distribution du dernier kilomètre."
+      }
+    ]
+  },
+
+  "map": {
+    "label": "Réseau Mondial",
+    "line1": "Réseau",
+    "line2": "Import &",
+    "line3": "Export",
+    "body": "FDL Chemicals s'approvisionne directement auprès de fabricants agréés en Allemagne, Belgique, Espagne, Chine, Inde et États-Unis — et distribue à travers le Maroc, l'Afrique de l'Ouest et la région MENA via des partenaires logistiques certifiés.",
+    "legend": {
+      "hub": "Hub Principal",
+      "import": "Routes d'Import",
+      "dist": "Distribution"
+    },
+    "routes": [
+      { "country": "Allemagne",        "type": "Acides Industriels & Solvants" },
+      { "country": "Chine",            "type": "Additifs Polymères & Bases" },
+      { "country": "Inde",             "type": "Agrochimie & Colorants" },
+      { "country": "Belgique",         "type": "Solvants Spéciaux" },
+      { "country": "Espagne",          "type": "Chimie Alimentaire" },
+      { "country": "États-Unis",       "type": "Agents de Traitement des Eaux" },
+      { "country": "Maroc",            "type": "Hub de Distribution Principal" },
+      { "country": "Afrique de l'Ouest", "type": "Marchés d'Export Régionaux" }
+    ]
+  },
+
+  "certs": {
+    "label": "Assurance Qualité",
+    "line1": "Certifié.",
+    "line2": "Conforme.",
+    "line3": "Fiable.",
+    "items": [
+      { "name": "REACH",   "desc": "Conformité aux réglementations européennes d'enregistrement et d'autorisation chimique" },
+      { "name": "ISO 9001","desc": "Certification internationale des systèmes de management de la qualité" },
+      { "name": "ADR",     "desc": "Conformité au transport routier de marchandises dangereuses en UE et MENA" },
+      { "name": "Halal",   "desc": "Produits chimiques alimentaires et de traitement certifiés Halal" },
+      { "name": "MSDS",    "desc": "Fiches de données de sécurité complètes pour tous les produits du portefeuille" },
+      { "name": "COA",     "desc": "Certificats d'analyse émis pour chaque lot et chaque livraison" },
+      { "name": "GMP",     "desc": "Normes de bonnes pratiques de fabrication pour les grades alimentaire et pharmaceutique" },
+      { "name": "Customs", "desc": "Courtier en douane agréé — dédouanement Maroc et international" }
+    ]
+  },
+
+  "contact": {
+    "label": "Nous Contacter",
+    "line1": "Démarrons",
+    "line2": "Ensemble",
+    "address_label": "Adresse",
+    "address_value": "Zone Industrielle, Casablanca, Maroc",
+    "email_label": "E-mail",
+    "email_value": "contact@fdl-chemicals.ma",
+    "phone_label": "Téléphone",
+    "phone_value": "+212 5 22 XXX XXX",
+    "hours_label": "Heures d'Ouverture",
+    "hours_value": "Lun–Ven, 08h00–18h00 (GMT+1)",
+    "form": {
+      "firstname": "Prénom",
+      "firstname_ph": "Ahmed",
+      "lastname": "Nom",
+      "lastname_ph": "El Mansouri",
+      "company": "Société",
+      "company_ph": "Société ou Organisation",
+      "email": "Adresse E-mail",
+      "email_ph": "vous@societe.com",
+      "category": "Catégorie de Produit",
+      "category_ph": "Sélectionner une catégorie",
+      "message": "Message & Spécifications",
+      "message_ph": "Décrivez vos besoins, quantités, lieu de livraison et contraintes réglementaires éventuelles...",
+      "submit": "Envoyer la Demande →",
+      "success": "Message envoyé — Nous vous répondrons dans les 24 heures.",
+      "error": "Une erreur s'est produite. Veuillez réessayer.",
+      "categories": [
+        "Acides Industriels",
+        "Chimie Agricole",
+        "Solvants Spéciaux",
+        "Caustiques & Bases",
+        "Traitement des Eaux",
+        "Additifs Polymères",
+        "Traitement de Surface",
+        "Chimie Alimentaire",
+        "Autre"
+      ]
+    }
+  },
+
+  "footer": {
+    "copy": "© 2026 FDL Chemicals. Tous droits réservés.",
+    "links": [
+      { "label": "À Propos",      "href": "#about" },
+      { "label": "Produits",      "href": "#products-section" },
+      { "label": "Certifications","href": "#certs" },
+      { "label": "Contact",       "href": "#contact" }
+    ]
+  }
+}
